@@ -125,7 +125,7 @@ function short(n) { n = Number(n) || 0; var a = Math.abs(n); if (a >= 1e6) retur
 
 /* ---------- server calls ---------- */
 // ---- connection to the back end (Google Apps Script). Set the address once here. ----
-var API_URL = 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+var API_URL = 'https://script.google.com/macros/s/AKfycbzXneyGcDwGa_5J-eqxNzNCnSJbtpq-vA8x6OxJgH6YOJdR5KF9v0cDU-dQid-WX070/exec';
 // Every admin action is sent to the Apps Script web app as one POST. The back end checks the admin token.
 function srv(fn) {
   var args = Array.prototype.slice.call(arguments, 1);
